@@ -1,0 +1,1 @@
+# minimal_django_rest
