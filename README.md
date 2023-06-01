@@ -1,5 +1,5 @@
 # Minimal Django Rest
-![minimal_django_rest.png](..%2F..%2FDesktop%2Fminimal_django_rest.png)
+![minimal_django_rest.png](https://s8.uupload.ir/files/minimal-django-rest_c6mt.png)
 
 ## Description
 This project aims to reduce the file size and code amount in setting up a `RestFramework` in Django.
