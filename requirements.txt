@@ -1,0 +1,9 @@
+asgiref==3.7.2
+cffi==1.15.1
+cryptography==41.0.1
+Django==4.2.1
+django-rest-knox==4.2.0
+djangorestframework==3.14.0
+pycparser==2.21
+pytz==2023.3
+sqlparse==0.4.4
