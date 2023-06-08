@@ -1,5 +1,4 @@
 from rest_framework import serializers
-
 from minimal_django_rest.models import SampleModel
 
 

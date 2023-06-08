@@ -1,10 +1,9 @@
-from django.http import HttpResponse
 from rest_framework import viewsets, status
 from rest_framework.generics import get_object_or_404
-from rest_framework.response import Response
-
 from minimal_django_rest.models import SampleModel
 from minimal_django_rest.serializers import SampleModelSerializer
+from rest_framework import permissions
+from rest_framework.response import Response
 
 
 class SampleModelViewSet(viewsets.ViewSet):
@@ -16,6 +15,11 @@ class SampleModelViewSet(viewsets.ViewSet):
             serializer.save()
             return Response(serializer.data, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+    def get_permissions(self):  # override permissions just for list samples
+        if self.action == 'list':
+            return [permissions.IsAuthenticated()]
+        return super().get_permissions()
 
     def list(self, request):
         queryset = SampleModel.objects.all()
@@ -43,4 +47,3 @@ class SampleModelViewSet(viewsets.ViewSet):
         sample = get_object_or_404(queryset, pk=pk)
         sample.delete()
         return Response(data={}, status=status.HTTP_204_NO_CONTENT)
-
