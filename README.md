@@ -9,7 +9,7 @@ The capabilities that this project is supposed to have include:
 - [X] The possibility of making tokens and managing login by knox
 - [X] A simple model
 - [X] A view to perform `CRUD` operations by the ViewSet class
-- [ ] Remove useless codes
+- [X] Remove useless codes
 
 ## Usage
 Just run the following codes in the `terminal`:
