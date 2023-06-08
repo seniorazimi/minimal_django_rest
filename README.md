@@ -6,9 +6,9 @@ This project aims to reduce the file size and code amount in setting up a `RestF
 
 ## The capabilities
 The capabilities that this project is supposed to have include:
-- [ ] The possibility of making tokens and managing login by knox
+- [X] The possibility of making tokens and managing login by knox
 - [X] A simple model
-- [ ] A view to perform `CRUD` operations by the ViewSet class
+- [X] A view to perform `CRUD` operations by the ViewSet class
 - [ ] Remove useless codes
 
 ## Usage
